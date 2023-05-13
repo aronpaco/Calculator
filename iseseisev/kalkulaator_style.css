@@ -1,0 +1,103 @@
+.laenu-kalkulaator {
+    font-family: "Roboto", sans-serif;
+    width: 600px;
+    margin: 24px auto;
+    background: lightgray;
+    box-shadow: 0 12px 50px -11px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    color: #2F3E46;
+    overflow: hidden;
+}
+
+.laenu-kalkulaator,
+.laenu-kalkulaator * {
+    box-sizing: border-box;
+}
+
+.laenu-kalkulaator .top {
+    background: #2F3E46;
+    color: white;
+    padding: 32px;
+}
+
+.laenu-kalkulaator .top h2 {
+    margin-top: 0;
+}
+
+.laenu-kalkulaator form {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.laenu-kalkulaator .title {
+    margin-bottom: 16px;
+}
+
+.laenu-kalkulaator form input {
+    font-size: 20px;
+    padding: 8px 24px;
+    width: 100%;
+}
+
+.laenu-kalkulaator .tulemus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.laenu-kalkulaator .tulemus .vasak {
+    width: 100%;
+    padding: 8px 32px;
+    background: #CAD2C5;
+}
+
+.laenu-kalkulaator .vasak h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.laenu-kalkulaator .tulemus .value {
+    font-size: 30px;
+    font-weight: 900;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(20, 33, 61, 0.2);
+}
+
+.laenu-kalkulaator .tulemus .value::before {
+    content: "€";
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 6px;
+    opacity: 0.4;
+}
+
+.laenu-kalkulaator .arvuta-nupp {
+    background: #52796F;
+    color: white;
+    border: none;
+    padding: 8px 32px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+    margin: 24px 0;
+}
+
+@media (max-width: 650px) {
+    .laenu-kalkulaator {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .laenu-kalkulaator form {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .laenu-kalkulaator .tulemus {
+        flex-direction: column;
+        text-align: center;
+    }
+}
